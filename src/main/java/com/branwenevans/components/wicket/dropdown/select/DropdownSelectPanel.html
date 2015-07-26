@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns:wicket>
+<wicket:head>
+    <wicket:link>
+        <link rel="stylesheet" href="DropDownSelectAndViewPanel.css" type="text/css" />
+    </wicket:link>
+</wicket:head>
+<body>
+    <wicket:panel>
+        <div class="DropDownSelectAndViewPanel">
+            <form wicket:id="form">
+                <div wicket:id="container">
+                    <select class="dropdown" wicket:id="dropdown"></select>
+                    <ul class="listContainer">
+                        <li wicket:id="selectedList"><span wicket:id="itemLabel"></span> <a wicket:id="deleteLink"><wicket:message key='removeLink'/></a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </wicket:panel>
+</body>
+</html>
